@@ -1,0 +1,385 @@
+// INDEX
+
+main{
+    .main-section-index{
+        background-image: url(../img/modelo-cocina-1.jpg);
+        @extend %background-image;
+        div{
+            padding: 15px;
+            border: 5px double #4f4f4f54;
+            border-radius: 25px;
+            background-color: #4f4f4f49;
+            h1{
+                text-align: center;
+                font-size: 100px;
+                font-weight: 900;
+                color: $color-principal;
+            }
+            p{
+                text-align: center;
+                font-size: 60px;
+                font-weight: 500;
+                color: $color-secundario;
+            }
+        }
+    }
+    .el-diseño{
+        background-color: $color-secundario;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 500px;
+            height: auto;
+        }
+        div{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 100px;
+            h2{
+                color: $color-principal;
+                font-size: 40px;
+                padding: 25px;
+            }
+            p{
+                font-size: 25px;
+                color: $color-quinario;
+                padding: 15px 15px;
+                border: 5px double $color-quinario;
+                border-radius: 10px;
+            }
+        }
+    }
+    .index-productos-destacados{
+        background-color: $color-quinario;
+        h2{
+            font-size: 40px;
+            color: $color-quinario;
+            background-color: $color-principal;
+            padding: 20px;
+            text-align: center;
+        }
+        div{
+            @include flex-tarjetas (flex, space-around, center, wrap);
+            div{
+                @extend %tarjetas;
+                img{
+                    @include img-tarjetas (400px, 300px, 7px);
+                }
+                h3{
+                    @extend %h3-tarjetas;
+                }
+            }
+        }
+    }
+    .nuestros-trabajos{
+        background-color: $color-quinario;
+        h2{
+            width: 100%;
+            font-size: 40px;
+            color: $color-secundario;
+            font-weight: 700;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-conteiner-nuestros-trabajos{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 250px;
+            gap: 15px;
+            padding: 15px;
+            .grid-item-uno{
+                grid-row: span 2;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 3px solid $color-principal;
+                    border-radius: 10px;
+                }
+            }
+            .grid-item-dos{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 3px solid $color-principal;
+                    border-radius: 10px;
+                }
+            }
+            .grid-item-tres{
+                grid-row: span 2;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 3px solid $color-principal;
+                    border-radius: 10px;
+                }
+            }
+            .grid-item-cuatro{
+                grid-row: span 2;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 3px solid $color-principal;
+                    border-radius: 10px;
+                }
+            }
+            .grid-item-cinco{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 3px solid $color-principal;
+                    border-radius: 10px;
+                }
+            }
+            .grid-item-seis{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 3px solid $color-principal;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+// PRODUCTOS
+
+main{
+    .main-section-productos{
+        background-image: url(../img/productos-comedor1.jpg);
+        @extend %background-image;
+        h1{
+            font-size: 100px;
+            font-weight: 900;
+            color: $color-quinario;
+        }
+    }
+    .listado-productos{
+        background-color: $color-quinario;
+        div{
+            @include flex-tarjetas (flex, space-around, center, wrap);
+            div{
+                @extend %tarjetas;
+                img{
+                    @include img-tarjetas (400px, 300px, 7px);
+                }
+                h3{
+                    @extend %h3-tarjetas;
+                }
+            }
+        }
+    }
+}
+
+// NOSOTROS
+
+main{
+    .main-section-nosotros{
+        background-image: url(../img/nosotros-carpinteria1.jpg);
+        @extend %background-image;
+        h1{
+            font-size: 100px;
+            font-weight: 900;
+            color: $color-quinario;
+        }
+    }
+    .lo-que-hacemos{
+        background-color: $color-secundario;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            text-align: center;
+            font-size: 45px;
+            font-weight: 900;
+            color: $color-principal;
+            margin-left: 20px;
+        }
+        p{
+            font-size: 25px;
+            color: $color-quinario;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            border: 5px double $color-principal;
+            border-radius: 10px;
+        }
+    }
+}
+
+// SERVICIOS
+
+main{
+    .main-section-servicios{
+        background-image: url(../img/servicios1.jpg);
+        @extend %background-image;
+        h1{
+            font-size: 100px;
+            font-weight: 900;
+            color: $color-quinario;
+        }
+    }
+    .main-section-servicios-dos{
+        background-color: $color-quinario;
+        .main-section-fila{
+            @include flex-tarjetas (flex, space-evenly, center, wrap);
+            div{
+                @extend %tarjetas;
+                img{
+                    @include img-tarjetas (600px, 300px, 7px);
+                }
+                h3{
+                    @extend %h3-tarjetas;
+                }
+            }
+        }
+    }
+}
+
+// CONTACTO
+
+main{
+    .main-section-contacto{
+        background-image: url(../img/contacto-madera1.jpg);
+        @extend %background-image;
+        h1{
+            font-size: 100px;
+            font-weight: 900;
+            color: $color-quinario;
+        }
+    }
+    .main-section-info{
+        background-color: $color-secundario;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 25px;
+        h2{
+            color: $color-quinario;
+            font-size: 35px;
+            margin: 25px;
+        }
+        .solicitar-info{
+            width: 60%;
+            min-width: 300px;
+            background-color: $color-principal;
+            color: $color-secundario;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: 800;
+            border-radius: 5px;
+            .formulario{
+                div{
+                    input{
+                        background-color: #f4f3ef6e;
+                        width: 100%;
+                        height: 45px;
+                        padding: 10px;
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        border: none;
+                        border-radius: 5px;
+                    }
+                    select{
+                        background-color: #f4f3ef6e;
+                        width: 100%;
+                        height: 45px;
+                        padding: 10px;
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        border: none;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .mensaje{
+                div{
+                    textarea{
+                        background-color: #f4f3ef6e;
+                        font-size: 20px;
+                        width: 100%;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 5px;
+                    }
+                    input{
+                        width: 100%;
+                        height: 50px;
+                        background-color: #4f4f4fd2;
+                        font-size: 20px;
+                        color: $color-principal;
+                        font-weight: 800;
+                        border: none;
+                        border-radius: 5px;
+                        &:hover{
+                            background-color: $color-secundario;
+                            color: $color-quinario;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .direccion{
+        background-image: url(../img/contacto-madera1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .datos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                font-size: 40px;
+                color: $color-quinario;
+                margin: 10px;
+            }
+            ul{
+                li{
+                    font-size: 30px;
+                    list-style-type: circle;
+                    color: $color-quinario;
+                    margin: 5px;
+                }
+            }
+        }
+        .ubicacion{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            iframe{
+                width: 600px;
+                height: 400px;
+                border-radius: 5px;
+                border: 5px solid $color-principal;
+            }
+        }
+    }
+}

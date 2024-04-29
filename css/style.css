@@ -242,10 +242,6 @@ footer div {
     grid-row: span 2;
 }
 
-.grid-item-dos {
-    grid-column: span ;
-}
-
 .grid-item-tres {
     grid-row: span 2;
 }
@@ -384,13 +380,13 @@ footer div {
     align-items: center;
 }
 
-.direccion div h2 {
+.datos h2 {
     font-size: 40px;
     color: #f4f3ef;
     margin: 10px;
 }
 
-.direccion div ul li {
+.datos ul li {
     font-size: 30px;
     list-style-type: circle;
     color: #f4f3ef;
@@ -840,7 +836,7 @@ footer div {
         width: 100%;
         height: 200px;
     }
-    .titulo-slide h4 {
+    .main-section-carrusel h4 {
         font-size: 20px;
         font-weight: 900;
     }  

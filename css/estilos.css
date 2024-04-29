@@ -1,0 +1,742 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.nav-link {
+  font-size: x-large;
+  font-weight: 900;
+  color: #f4c430; }
+  .nav-link:hover {
+    color: #868584; }
+
+.main-section-carrusel {
+  background-color: #f4f3ef;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main-section-carrusel h4 {
+    text-align: center;
+    color: #4f4f4f;
+    font-size: 30px;
+    font-weight: 900; }
+  .main-section-carrusel img {
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    border: 5px solid #f4c430; }
+
+main .index-productos-destacados div div, main .listado-productos div div, main .main-section-servicios-dos .main-section-fila div {
+  border: 5px double #4f4f4f;
+  background-color: #f4c430;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75);
+  -webkit-box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75);
+  -moz-box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75); }
+
+main .index-productos-destacados div div h3, main .listado-productos div div h3, main .main-section-servicios-dos .main-section-fila div h3 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #4f4f4f;
+  margin: 5px; }
+
+.botonvermas {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: #f4c430;
+  background-color: #4f4f4fc5;
+  padding: 5px 10px;
+  border: 5px double #f4c430;
+  border-radius: 10px; }
+  .botonvermas:hover {
+    background-color: #4f4f4f;
+    color: #f4f3ef; }
+
+main .main-section-index, main .main-section-productos, main .main-section-nosotros, main .main-section-servicios, main .main-section-contacto {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  background-color: #f4f3ef;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header nav div a img {
+    width: 80%;
+    border-radius: 15px; }
+
+main .main-section-index {
+  background-image: url(../img/modelo-cocina-1.jpg); }
+  main .main-section-index div {
+    padding: 15px;
+    border: 5px double #4f4f4f54;
+    border-radius: 25px;
+    background-color: #4f4f4f49; }
+    main .main-section-index div h1 {
+      text-align: center;
+      font-size: 100px;
+      font-weight: 900;
+      color: #f4c430; }
+    main .main-section-index div p {
+      text-align: center;
+      font-size: 60px;
+      font-weight: 500;
+      color: #4f4f4f; }
+
+main .el-diseño {
+  background-color: #4f4f4f;
+  display: flex;
+  justify-content: center; }
+  main .el-diseño img {
+    width: 500px;
+    height: auto; }
+  main .el-diseño div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px; }
+    main .el-diseño div h2 {
+      color: #f4c430;
+      font-size: 40px;
+      padding: 25px; }
+    main .el-diseño div p {
+      font-size: 25px;
+      color: #f4f3ef;
+      padding: 15px 15px;
+      border: 5px double #f4f3ef;
+      border-radius: 10px; }
+
+main .index-productos-destacados {
+  background-color: #f4f3ef; }
+  main .index-productos-destacados h2 {
+    font-size: 40px;
+    color: #f4f3ef;
+    background-color: #f4c430;
+    padding: 20px;
+    text-align: center; }
+  main .index-productos-destacados div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .index-productos-destacados div div img {
+      width: 400px;
+      height: 300px;
+      border-radius: 7px; }
+
+main .nuestros-trabajos {
+  background-color: #f4f3ef; }
+  main .nuestros-trabajos h2 {
+    width: 100%;
+    font-size: 40px;
+    color: #4f4f4f;
+    font-weight: 700;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  main .nuestros-trabajos .grid-conteiner-nuestros-trabajos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+    padding: 15px; }
+    main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-uno {
+      grid-row: span 2; }
+      main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-uno img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px solid #f4c430;
+        border-radius: 10px; }
+    main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-dos img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 3px solid #f4c430;
+      border-radius: 10px; }
+    main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-tres {
+      grid-row: span 2; }
+      main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-tres img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px solid #f4c430;
+        border-radius: 10px; }
+    main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-cuatro {
+      grid-row: span 2; }
+      main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-cuatro img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px solid #f4c430;
+        border-radius: 10px; }
+    main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-cinco img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 3px solid #f4c430;
+      border-radius: 10px; }
+    main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-seis img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 3px solid #f4c430;
+      border-radius: 10px; }
+
+main .main-section-productos {
+  background-image: url(../img/productos-comedor1.jpg); }
+  main .main-section-productos h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: #f4f3ef; }
+
+main .listado-productos {
+  background-color: #f4f3ef; }
+  main .listado-productos div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .listado-productos div div img {
+      width: 400px;
+      height: 300px;
+      border-radius: 7px; }
+
+main .main-section-nosotros {
+  background-image: url(../img/nosotros-carpinteria1.jpg); }
+  main .main-section-nosotros h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: #f4f3ef; }
+
+main .lo-que-hacemos {
+  background-color: #4f4f4f;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .lo-que-hacemos h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    color: #f4c430;
+    margin-left: 20px; }
+  main .lo-que-hacemos p {
+    font-size: 25px;
+    color: #f4f3ef;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 5px double #f4c430;
+    border-radius: 10px; }
+
+main .main-section-servicios {
+  background-image: url(../img/servicios1.jpg); }
+  main .main-section-servicios h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: #f4f3ef; }
+
+main .main-section-servicios-dos {
+  background-color: #f4f3ef; }
+  main .main-section-servicios-dos .main-section-fila {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; }
+    main .main-section-servicios-dos .main-section-fila div img {
+      width: 600px;
+      height: 300px;
+      border-radius: 7px; }
+
+main .main-section-contacto {
+  background-image: url(../img/contacto-madera1.jpg); }
+  main .main-section-contacto h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: #f4f3ef; }
+
+main .main-section-info {
+  background-color: #4f4f4f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px; }
+  main .main-section-info h2 {
+    color: #f4f3ef;
+    font-size: 35px;
+    margin: 25px; }
+  main .main-section-info .solicitar-info {
+    width: 60%;
+    min-width: 300px;
+    background-color: #f4c430;
+    color: #4f4f4f;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    border-radius: 5px; }
+    main .main-section-info .solicitar-info .formulario div input {
+      background-color: #f4f3ef6e;
+      width: 100%;
+      height: 45px;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px; }
+    main .main-section-info .solicitar-info .formulario div select {
+      background-color: #f4f3ef6e;
+      width: 100%;
+      height: 45px;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px; }
+    main .main-section-info .solicitar-info .mensaje div textarea {
+      background-color: #f4f3ef6e;
+      font-size: 20px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; }
+    main .main-section-info .solicitar-info .mensaje div input {
+      width: 100%;
+      height: 50px;
+      background-color: #4f4f4fd2;
+      font-size: 20px;
+      color: #f4c430;
+      font-weight: 800;
+      border: none;
+      border-radius: 5px; }
+      main .main-section-info .solicitar-info .mensaje div input:hover {
+        background-color: #4f4f4f;
+        color: #f4f3ef; }
+
+main .direccion {
+  background-image: url(../img/contacto-madera1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  main .direccion .datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .direccion .datos h2 {
+      font-size: 40px;
+      color: #f4f3ef;
+      margin: 10px; }
+    main .direccion .datos ul li {
+      font-size: 30px;
+      list-style-type: circle;
+      color: #f4f3ef;
+      margin: 5px; }
+  main .direccion .ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .direccion .ubicacion iframe {
+      width: 600px;
+      height: 400px;
+      border-radius: 5px;
+      border: 5px solid #f4c430; }
+
+footer {
+  background-color: #f4f3ef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer a img {
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 10px; }
+  footer h4 {
+    font-size: x-large;
+    text-align: center; }
+  footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px; }
+    footer div a img {
+      width: 50px;
+      height: 50px;
+      margin: 0px 10px; }
+
+@media screen and (max-width: 1439px) {
+  main .main-section-index div {
+    width: 80%; }
+  main .main-section-index div h1 {
+    font-size: 80px; }
+  main .main-section-index div p {
+    font-size: 40px; }
+  footer h4 {
+    font-size: large; } }
+
+@media screen and (max-width: 1200px) {
+  main .el-diseño {
+    height: 600px; }
+  main .el-diseño img {
+    width: 500px;
+    height: 600px; }
+  main .el-diseño div {
+    margin: 25px; }
+  main .el-diseño div h2 {
+    font-size: 30px; }
+  main .el-diseño div p {
+    font-size: 20px; }
+  main .direccion .ubicacion iframe {
+    width: 500px;
+    height: 400px; } }
+
+@media screen and (max-width: 1125px) {
+  main .lo-que-hacemos h2 {
+    font-size: 35px; }
+  main .lo-que-hacemos p {
+    font-size: 18px; } }
+
+@media screen and (max-width: 1100px) {
+  main .direccion .datos h2 {
+    font-size: 30px; }
+  main .direccion .datos ul li {
+    font-size: 20px; }
+  main .direccion .ubicacion iframe {
+    width: 400px;
+    height: 350px; } }
+
+@media screen and (max-width: 1038px) {
+  main .main-section-info .solicitar-info {
+    width: 70%; }
+  main .main-section-info h2 {
+    text-align: center;
+    font-size: 30px; } }
+
+@media screen and (max-width: 952px) {
+  main .main-section-index div {
+    width: 60%; }
+  main .main-section-index div h1 {
+    font-size: 60px; }
+  main .main-section-index div p {
+    font-size: 40px; } }
+
+@media screen and (max-width: 900px) {
+  main .el-diseño {
+    width: auto;
+    height: 500px; }
+  main .el-diseño img {
+    display: none; }
+  main .el-diseño div {
+    margin: 50px; }
+  main .el-diseño div h2 {
+    font-size: 25px; }
+  main .el-diseño div p {
+    font-size: 20px; }
+  main .nuestros-trabajos h2 {
+    font-size: xx-large; }
+  main .nuestros-trabajos .grid-conteiner-nuestros-trabajos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px; }
+  main .nuestros-trabajos .grid.conteiner-nuestros-trabajos .grid-item-cinco {
+    grid-row: span 2; }
+  main .direccion {
+    height: 400px; }
+  main .direccion .datos h2 {
+    font-size: 28px; }
+  main .direccion .datos ul li {
+    font-size: 18px; }
+  main .direccion .ubicacion iframe {
+    width: 350px;
+    height: 300px; } }
+
+@media screen and (max-width: 860px) {
+  main .main-section-carrusel div div div img {
+    width: 600px;
+    height: 300px; } }
+
+@media screen and (max-width: 820px) {
+  main .main-section-contacto h1 {
+    font-size: 80px; }
+  main .main-section-nosotros h1 {
+    font-size: 80px; }
+  main .main-section-productos h1 {
+    font-size: 80px; }
+  main .main-section-servicios h1 {
+    font-size: 80px; } }
+
+@media screen and (max-width: 806px) {
+  main .main-section-index {
+    height: 500px;
+    background-size: 100% 100%; }
+  main .main-section-index div {
+    width: 60%; }
+  main .main-section-index div h1 {
+    font-size: 50px; }
+  main .main-section-index div p {
+    font-size: 30px; }
+  main .main-section-contacto {
+    height: 500px;
+    background-size: 100% 100%; }
+  main .main-section-nosotros {
+    height: 500px;
+    background-size: 100% 100%; }
+  main .main-section-productos {
+    height: 500px;
+    background-size: 100% 100%; }
+  main .main-section-servicios {
+    height: 500px;
+    background-size: 100% 100%; } }
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 10px;
+    flex-direction: column; }
+  footer h4 {
+    padding: 10px; }
+  footer div a {
+    padding: 10px; } }
+
+@media screen and (max-width: 750px) {
+  main .direccion {
+    height: 700px;
+    flex-direction: column; }
+  main .direccion .datos h2 {
+    font-size: 35px; }
+  main .direccion .datos ul li {
+    font-size: 25px; }
+  main .direccion .ubicacion iframe {
+    width: 500px;
+    height: 280px; } }
+
+@media screen and (max-width: 720px) {
+  main .lo-que-hacemos h2 {
+    font-size: 30px; }
+  main .lo-que-hacemos p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 700px) {
+  main .main-section-info .solicitar-info {
+    width: 80%; } }
+
+@media screen and (max-width: 690px) {
+  main .main-section-servicios-dos .main-section-fila div img {
+    width: 500px;
+    height: 300px; } }
+
+@media screen and (max-width: 650px) {
+  main .main-section-contacto h1 {
+    font-size: 60px; }
+  main .main-section-nosotros h1 {
+    font-size: 60px; }
+  main .main-section-productos h1 {
+    font-size: 60px; }
+  main .main-section-servicios h1 {
+    font-size: 60px; } }
+
+@media screen and (max-width: 640px) {
+  main .main-section-carrusel div div div img {
+    width: 100%;
+    height: 200px; }
+  main .main-section-carrusel div div div h4 {
+    font-size: 20px;
+    font-weight: 900; } }
+
+@media screen and (max-width: 638px) {
+  main .main-section-index div {
+    width: 80%;
+    padding: 10px; }
+  main .main-section-index div h1 {
+    font-size: 40px; }
+  main .main-section-index div p {
+    font-size: 25px;
+    font-weight: 900; } }
+
+@media screen and (max-width: 611px) {
+  main .lo-que-hacemos {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  main .main-section-index {
+    background-image: url(../img/modelo-escalera-1.jpg); }
+  main .main-section-contacto {
+    background-image: url(../img/contacto-madera1.jpg); }
+  main .main-section-nosotros {
+    background-image: url(../img/contacto-madera1.jpg); }
+  main .main-section-productos {
+    background-image: url(../img/contacto-madera1.jpg); }
+  main .main-section-servicios {
+    background-image: url(../img/contacto-madera1.jpg); }
+  main .el-diseño {
+    width: auto;
+    height: 450px; }
+  main .el-diseño div {
+    margin: 40px; }
+  main .el-diseño div h2 {
+    font-size: 20px; }
+  main .el-diseño div p {
+    font-size: 15px; }
+  main .nuestros-trabajos h2 {
+    font-size: x-large; }
+  main .nuestros-trabajos .grid-conteiner-nuestros-trabajos {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 150px; }
+  main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-dos {
+    grid-row: span 2; }
+  main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-seis {
+    grid-row: span 2; }
+  main .main-section-servicios-dos .main-section-fila div img {
+    width: 400px;
+    height: 300px; } }
+
+@media screen and (max-width: 520px) {
+  main .direccion {
+    height: 600px; }
+  main .direccion .datos h2 {
+    font-size: 30px; }
+  main .direccion .datos ul li {
+    font-size: 20px; }
+  main .direccion .ubicacion iframe {
+    width: 450px;
+    height: 280px; } }
+
+@media screen and (max-width: 509px) {
+  main .lo-que-hacemos h2 {
+    font-size: 25px; }
+  main .lo-que-hacemos p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 500px) {
+  main .main-section-info .solicitar-info {
+    width: 100%; } }
+
+@media screen and (max-width: 470px) {
+  main .main-section-contacto h1 {
+    font-size: 40px; }
+  main .main-section-nosotros h1 {
+    font-size: 40px; }
+  main .main-section-productos h1 {
+    font-size: 40px; }
+  main .main-section-servicios h1 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 460px) {
+  main .index-productos-destacados h2 {
+    font-size: x-large; }
+  main .index-productos-destacados div div img {
+    width: 300px;
+    height: 200px;
+    border-radius: 7px; }
+  main .listado-productos div div img {
+    width: 300px;
+    height: 200px;
+    border-radius: 7px; }
+  main .main-section-servicios-dos .main-section-fila div img {
+    width: 300px;
+    height: 200px; }
+  main .direccion .datos h2 {
+    font-size: 25px; }
+  main .direccion .ubicacion iframe {
+    width: 400px;
+    height: 280px; } }
+
+@media screen and (max-width: 448px) {
+  main .lo-que-hacemos h2 {
+    margin-bottom: 10px; }
+  main .lo-que-hacemos p {
+    padding: 5px;
+    margin: 5px; } }
+
+@media screen and (max-width: 429px) {
+  main .el-diseño {
+    width: auto;
+    height: 450px; }
+  main .el-diseño div {
+    margin: 30px; }
+  main .el-diseño div h2 {
+    font-size: 20px; }
+  main .el-diseño div p {
+    font-size: 13px; } }
+
+@media screen and (max-width: 415px) {
+  main .direccion .datos h2 {
+    font-size: 23px; }
+  main .direccion .datos ul li {
+    font-size: 18px; }
+  main .direccion .ubicacion iframe {
+    width: 300px;
+    height: 250px; } }
+
+@media screen and (max-width: 400px) {
+  main .main-section-index {
+    height: 450px; }
+  main .main-section-index div {
+    width: 70%;
+    padding: 5px; }
+  main .main-section-index div h1 {
+    font-size: 30px; }
+  main .main-section-index div p {
+    font-size: 20px; }
+  main .main-section-contacto {
+    height: 450px; }
+  main .main-section-nosotros {
+    height: 450px; }
+  main .main-section-productos {
+    height: 450px; }
+  main .main-section-servicios {
+    height: 450px; } }
+
+@media screen and (max-width: 370px) {
+  main .index-productos-destacados div div img {
+    width: 250px;
+    height: 150px;
+    border-radius: 7px; }
+  main .listado-productos div div img {
+    width: 250px;
+    height: 150px;
+    border-radius: 7px; }
+  main .main-section-servicios-dos .main-section-fila div img {
+    width: 290px;
+    height: 170px; } }
