@@ -68,6 +68,14 @@
     }
 }
 
+@media screen and (max-width: 991px) {
+    header nav div div ul li .nav-link {
+        &:hover{
+            transform: none;
+        }
+    }
+}
+
 @media screen and (max-width: 952px){
     main .main-section-index div {
         width: 60%;

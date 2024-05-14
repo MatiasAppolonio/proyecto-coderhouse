@@ -1,14 +1,16 @@
 // INDEX
 
 main{
+    background: $color-principal;
+    background: linear-gradient(109deg, rgba(244,196,48,0.7456232492997199) 0%, rgba(244,243,239,1) 50%, rgba(134,133,132,0.7484243697478992) 100%);
     .main-section-index{
         background-image: url(../img/modelo-cocina-1.jpg);
         @extend %background-image;
         div{
             padding: 15px;
-            border: 5px double #4f4f4f54;
+            border: 5px double #4f4f4f80;
             border-radius: 25px;
-            background-color: #4f4f4f49;
+            background-color: #4f4f4f80;
             h1{
                 text-align: center;
                 font-size: 100px;
@@ -19,12 +21,13 @@ main{
                 text-align: center;
                 font-size: 60px;
                 font-weight: 500;
-                color: $color-secundario;
+                color: $color-quinario;
             }
         }
     }
     .el-diseño{
-        background-color: $color-secundario;
+        background: $color-secundario;
+        background: radial-gradient(circle, rgba(79,79,79,0.8016456582633054) 75%, rgba(244,196,48,0.5999649859943977) 100%);
         display: flex;
         justify-content: center;
         img{
@@ -47,13 +50,12 @@ main{
                 font-size: 25px;
                 color: $color-quinario;
                 padding: 15px 15px;
-                border: 5px double $color-quinario;
+                border: 5px double $color-principal;
                 border-radius: 10px;
             }
         }
     }
     .index-productos-destacados{
-        background-color: $color-quinario;
         h2{
             font-size: 40px;
             color: $color-quinario;
@@ -75,7 +77,6 @@ main{
         }
     }
     .nuestros-trabajos{
-        background-color: $color-quinario;
         h2{
             width: 100%;
             font-size: 40px;
@@ -95,58 +96,34 @@ main{
             .grid-item-uno{
                 grid-row: span 2;
                 img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border: 3px solid $color-principal;
-                    border-radius: 10px;
+                    @extend %grid-img;
                 }
             }
             .grid-item-dos{
                 img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border: 3px solid $color-principal;
-                    border-radius: 10px;
+                    @extend %grid-img;
                 }
             }
             .grid-item-tres{
                 grid-row: span 2;
                 img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border: 3px solid $color-principal;
-                    border-radius: 10px;
+                    @extend %grid-img;
                 }
             }
             .grid-item-cuatro{
                 grid-row: span 2;
                 img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border: 3px solid $color-principal;
-                    border-radius: 10px;
+                    @extend %grid-img;
                 }
             }
             .grid-item-cinco{
                 img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border: 3px solid $color-principal;
-                    border-radius: 10px;
+                    @extend %grid-img;
                 }
             }
             .grid-item-seis{
                 img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border: 3px solid $color-principal;
-                    border-radius: 10px;
+                    @extend %grid-img;
                 }
             }
         }
@@ -166,7 +143,8 @@ main{
         }
     }
     .listado-productos{
-        background-color: $color-quinario;
+        background: $color-principal;
+        background: linear-gradient(109deg, rgba(244,196,48,0.7456232492997199) 0%, rgba(244,243,239,1) 50%, rgba(134,133,132,0.7484243697478992) 100%);
         div{
             @include flex-tarjetas (flex, space-around, center, wrap);
             div{
@@ -195,7 +173,8 @@ main{
         }
     }
     .lo-que-hacemos{
-        background-color: $color-secundario;
+        background: $color-secundario;
+        background: radial-gradient(circle, rgba(79,79,79,0.8016456582633054) 75%, rgba(244,196,48,0.5999649859943977) 100%);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -236,7 +215,8 @@ main{
         }
     }
     .main-section-servicios-dos{
-        background-color: $color-quinario;
+        background: $color-principal;
+        background: linear-gradient(109deg, rgba(244,196,48,0.7456232492997199) 0%, rgba(244,243,239,1) 50%, rgba(134,133,132,0.7484243697478992) 100%);
         .main-section-fila{
             @include flex-tarjetas (flex, space-evenly, center, wrap);
             div{
@@ -265,7 +245,8 @@ main{
         }
     }
     .main-section-info{
-        background-color: $color-secundario;
+        background: $color-secundario;
+        background: radial-gradient(circle, rgba(79,79,79,0.8016456582633054) 75%, rgba(244,196,48,0.5999649859943977) 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -331,6 +312,7 @@ main{
                         font-weight: 800;
                         border: none;
                         border-radius: 5px;
+                        transition: 1s;
                         &:hover{
                             background-color: $color-secundario;
                             color: $color-quinario;

@@ -1,5 +1,6 @@
 header{
-    background-color: $color-quinario;
+    background: $color-principal;
+    background: linear-gradient(109deg, rgba(244,196,48,0.7456232492997199) 0%, rgba(244,243,239,1) 50%, rgba(134,133,132,0.7484243697478992) 100%);
     position: sticky;
     top: 0;
     z-index: 1;
@@ -9,10 +10,12 @@ header{
                 img{
                     width: 80%;
                     border-radius: 15px;
-                }
-            
+                    transition: 0.7s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }            
             }
-
         }
     }
 }

@@ -19,9 +19,13 @@ $color-quinario:#f4f3ef;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 10px 30px -2px rgba(190,171,32,0.75);
-    -webkit-box-shadow: 1px 10px 30px -2px rgba(190,171,32,0.75);
-    -moz-box-shadow: 1px 10px 30px -2px rgba(190,171,32,0.75);
+    transition: 1s;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 1px 10px 30px -2px rgba(190,171,32,0.75);
+        -webkit-box-shadow: 1px 10px 30px -2px rgba(190,171,32,0.75);
+        -moz-box-shadow: 1px 10px 30px -2px rgba(190,171,32,0.75);
+    }
 }
 
 %h3-tarjetas{
@@ -36,14 +40,30 @@ $color-quinario:#f4f3ef;
     text-align: center;
     text-decoration: none;
     font-size: 15px;
-    color: #f4c430;
+    color: $color-principal;
     background-color: #4f4f4fc5;
     padding: 5px 10px;
-    border: 5px double #f4c430;
+    border: 5px double $color-principal;
     border-radius: 10px;
+    transition: 1s;
     &:hover {
-        background-color: #4f4f4f;
-        color: #f4f3ef;
+        background-color: $color-secundario;
+        color: $color-quinario;
+    }
+}
+
+%grid-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid $color-principal;
+    border-radius: 10px;
+    transition: 1s;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 1px 10px 30px -2px rgba(190,171,32,0.75);
+        -webkit-box-shadow: 1px 10px 30px -2px rgba(190,171,32,0.75);
+        -moz-box-shadow: 1px 10px 30px -2px rgba(190,171,32,0.75);
     }
 }
 

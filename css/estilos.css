@@ -1,38 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-* {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.nav-link {
-  font-size: x-large;
-  font-weight: 900;
-  color: #f4c430; }
-  .nav-link:hover {
-    color: #868584; }
-
-.main-section-carrusel {
-  background-color: #f4f3ef;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .main-section-carrusel h3 {
-    text-align: center;
-    color: #4f4f4f;
-    font-size: 30px;
-    font-weight: 900; }
-  .main-section-carrusel img {
-    width: 800px;
-    height: 400px;
-    border-radius: 10px;
-    border: 5px solid #f4c430; }
-
 main .index-productos-destacados div div, main .listado-productos div div, main .main-section-servicios-dos .main-section-fila div {
   border: 5px double #4f4f4f;
   background-color: #f4c430;
@@ -44,9 +11,12 @@ main .index-productos-destacados div div, main .listado-productos div div, main 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75);
-  -webkit-box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75);
-  -moz-box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75); }
+  transition: 1s; }
+  main .index-productos-destacados div div:hover, main .listado-productos div div:hover, main .main-section-servicios-dos .main-section-fila div:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75);
+    -webkit-box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75);
+    -moz-box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75); }
 
 main .index-productos-destacados div div h3, main .listado-productos div div h3, main .main-section-servicios-dos .main-section-fila div h3 {
   font-size: 30px;
@@ -63,10 +33,24 @@ main .index-productos-destacados div div h3, main .listado-productos div div h3,
   background-color: #4f4f4fc5;
   padding: 5px 10px;
   border: 5px double #f4c430;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transition: 1s; }
   .botonvermas:hover {
     background-color: #4f4f4f;
     color: #f4f3ef; }
+
+main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-uno img, main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-dos img, main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-tres img, main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-cuatro img, main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-cinco img, main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-seis img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #f4c430;
+  border-radius: 10px;
+  transition: 1s; }
+  main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-uno img:hover, main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-dos img:hover, main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-tres img:hover, main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-cuatro img:hover, main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-cinco img:hover, main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-seis img:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75);
+    -webkit-box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75);
+    -moz-box-shadow: 1px 10px 30px -2px rgba(190, 171, 32, 0.75); }
 
 main .main-section-index, main .main-section-productos, main .main-section-nosotros, main .main-section-servicios, main .main-section-contacto {
   background-position: center;
@@ -80,60 +64,99 @@ main .main-section-index, main .main-section-productos, main .main-section-nosot
   justify-content: center;
   align-items: center; }
 
+* {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.nav-link {
+  font-size: x-large;
+  font-weight: 900;
+  color: #f4c430;
+  transition: 0.7s; }
+  .nav-link:hover {
+    color: #868584;
+    transform: scale(1.1); }
+
+.main-section-carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px; }
+  .main-section-carrusel h3 {
+    text-align: center;
+    color: #4f4f4f;
+    font-size: 30px;
+    font-weight: 900; }
+  .main-section-carrusel img {
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    border: 5px solid #f4c430; }
+
 header {
-  background-color: #f4f3ef;
+  background: #f4c430;
+  background: linear-gradient(109deg, rgba(244, 196, 48, 0.745623) 0%, #f4f3ef 50%, rgba(134, 133, 132, 0.748424) 100%);
   position: sticky;
   top: 0;
   z-index: 1; }
   header nav div a img {
     width: 80%;
-    border-radius: 15px; }
+    border-radius: 15px;
+    transition: 0.7s; }
+    header nav div a img:hover {
+      transform: scale(1.1); }
 
-main .main-section-index {
-  background-image: url(../img/modelo-cocina-1.jpg); }
-  main .main-section-index div {
-    padding: 15px;
-    border: 5px double #4f4f4f54;
-    border-radius: 25px;
-    background-color: #4f4f4f49; }
-    main .main-section-index div h1 {
-      text-align: center;
-      font-size: 100px;
-      font-weight: 900;
-      color: #f4c430; }
-    main .main-section-index div p {
-      text-align: center;
-      font-size: 60px;
-      font-weight: 500;
-      color: #4f4f4f; }
-
-main .el-diseño {
-  background-color: #4f4f4f;
-  display: flex;
-  justify-content: center; }
-  main .el-diseño img {
-    width: 500px;
-    height: auto; }
-  main .el-diseño div {
-    text-align: center;
+main {
+  background: #f4c430;
+  background: linear-gradient(109deg, rgba(244, 196, 48, 0.745623) 0%, #f4f3ef 50%, rgba(134, 133, 132, 0.748424) 100%); }
+  main .main-section-index {
+    background-image: url(../img/modelo-cocina-1.jpg); }
+    main .main-section-index div {
+      padding: 15px;
+      border: 5px double #4f4f4f80;
+      border-radius: 25px;
+      background-color: #4f4f4f80; }
+      main .main-section-index div h1 {
+        text-align: center;
+        font-size: 100px;
+        font-weight: 900;
+        color: #f4c430; }
+      main .main-section-index div p {
+        text-align: center;
+        font-size: 60px;
+        font-weight: 500;
+        color: #f4f3ef; }
+  main .el-diseño {
+    background: #4f4f4f;
+    background: radial-gradient(circle, rgba(79, 79, 79, 0.801646) 75%, rgba(244, 196, 48, 0.599965) 100%);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 100px; }
-    main .el-diseño div h2 {
-      color: #f4c430;
-      font-size: 40px;
-      padding: 25px; }
-    main .el-diseño div p {
-      font-size: 25px;
-      color: #f4f3ef;
-      padding: 15px 15px;
-      border: 5px double #f4f3ef;
-      border-radius: 10px; }
-
-main .index-productos-destacados {
-  background-color: #f4f3ef; }
+    justify-content: center; }
+    main .el-diseño img {
+      width: 500px;
+      height: auto; }
+    main .el-diseño div {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 100px; }
+      main .el-diseño div h2 {
+        color: #f4c430;
+        font-size: 40px;
+        padding: 25px; }
+      main .el-diseño div p {
+        font-size: 25px;
+        color: #f4f3ef;
+        padding: 15px 15px;
+        border: 5px double #f4c430;
+        border-radius: 10px; }
   main .index-productos-destacados h2 {
     font-size: 40px;
     color: #f4f3ef;
@@ -149,9 +172,6 @@ main .index-productos-destacados {
       width: 400px;
       height: 300px;
       border-radius: 7px; }
-
-main .nuestros-trabajos {
-  background-color: #f4f3ef; }
   main .nuestros-trabajos h2 {
     width: 100%;
     font-size: 40px;
@@ -169,46 +189,10 @@ main .nuestros-trabajos {
     padding: 15px; }
     main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-uno {
       grid-row: span 2; }
-      main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-uno img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 3px solid #f4c430;
-        border-radius: 10px; }
-    main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-dos img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border: 3px solid #f4c430;
-      border-radius: 10px; }
     main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-tres {
       grid-row: span 2; }
-      main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-tres img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 3px solid #f4c430;
-        border-radius: 10px; }
     main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-cuatro {
       grid-row: span 2; }
-      main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-cuatro img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 3px solid #f4c430;
-        border-radius: 10px; }
-    main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-cinco img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border: 3px solid #f4c430;
-      border-radius: 10px; }
-    main .nuestros-trabajos .grid-conteiner-nuestros-trabajos .grid-item-seis img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border: 3px solid #f4c430;
-      border-radius: 10px; }
 
 main .main-section-productos {
   background-image: url(../img/productos-comedor1.jpg); }
@@ -218,7 +202,8 @@ main .main-section-productos {
     color: #f4f3ef; }
 
 main .listado-productos {
-  background-color: #f4f3ef; }
+  background: #f4c430;
+  background: linear-gradient(109deg, rgba(244, 196, 48, 0.745623) 0%, #f4f3ef 50%, rgba(134, 133, 132, 0.748424) 100%); }
   main .listado-productos div {
     display: flex;
     justify-content: space-around;
@@ -237,7 +222,8 @@ main .main-section-nosotros {
     color: #f4f3ef; }
 
 main .lo-que-hacemos {
-  background-color: #4f4f4f;
+  background: #4f4f4f;
+  background: radial-gradient(circle, rgba(79, 79, 79, 0.801646) 75%, rgba(244, 196, 48, 0.599965) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,7 +255,8 @@ main .main-section-servicios {
     color: #f4f3ef; }
 
 main .main-section-servicios-dos {
-  background-color: #f4f3ef; }
+  background: #f4c430;
+  background: linear-gradient(109deg, rgba(244, 196, 48, 0.745623) 0%, #f4f3ef 50%, rgba(134, 133, 132, 0.748424) 100%); }
   main .main-section-servicios-dos .main-section-fila {
     display: flex;
     justify-content: space-evenly;
@@ -288,7 +275,8 @@ main .main-section-contacto {
     color: #f4f3ef; }
 
 main .main-section-info {
-  background-color: #4f4f4f;
+  background: #4f4f4f;
+  background: radial-gradient(circle, rgba(79, 79, 79, 0.801646) 75%, rgba(244, 196, 48, 0.599965) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -343,7 +331,8 @@ main .main-section-info {
       color: #f4c430;
       font-weight: 800;
       border: none;
-      border-radius: 5px; }
+      border-radius: 5px;
+      transition: 1s; }
       main .main-section-info .solicitar-info .mensaje div input:hover {
         background-color: #4f4f4f;
         color: #f4f3ef; }
@@ -384,7 +373,8 @@ main .direccion {
       border: 5px solid #f4c430; }
 
 footer {
-  background-color: #f4f3ef;
+  background: #f4c430;
+  background: linear-gradient(109deg, rgba(244, 196, 48, 0.745623) 0%, #f4f3ef 50%, rgba(134, 133, 132, 0.748424) 100%);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -392,7 +382,10 @@ footer {
     width: 150px;
     height: 100px;
     margin: 5px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    transition: 1s; }
+    footer a img:hover {
+      transform: rotateZ(360deg); }
   footer h4 {
     font-size: x-large;
     text-align: center; }
@@ -404,7 +397,10 @@ footer {
     footer div a img {
       width: 50px;
       height: 50px;
-      margin: 0px 10px; }
+      margin: 0px 10px;
+      transition: 1s; }
+      footer div a img:hover {
+        transform: rotateZ(360deg); }
 
 @media screen and (max-width: 1439px) {
   main .main-section-index div {
@@ -453,6 +449,10 @@ footer {
   main .main-section-info h2 {
     text-align: center;
     font-size: 30px; } }
+
+@media screen and (max-width: 991px) {
+  header nav div div ul li .nav-link:hover {
+    transform: none; } }
 
 @media screen and (max-width: 952px) {
   main .main-section-index div {
